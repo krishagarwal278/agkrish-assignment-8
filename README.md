@@ -1,14 +1,37 @@
-# Assignment 8: Logistic Regression
+# Logistic Regression Cluster Shift Experiment
+
+## Project Overview
+
+This project implements an experiment to study the effects of shifting clusters on logistic regression parameters. The experiment generates two ellipsoid clusters with configurable shifts and fits a logistic regression model to observe how parameters such as coefficients, intercept, logistic loss, and decision boundaries change with increasing separation between the clusters.
+
+The project includes:
+- Data generation for shifted clusters.
+- Logistic regression model fitting and parameter extraction.
+- Visualization of datasets, decision boundaries, and parameter changes.
+- A Flask-based web application to interactively run and visualize the experiment.
 
 ---
 
-**Goals**:
+## Features
 
-In this assignment, you'll explore the effect of shifting clusters in a dataset on the parameters of a logistic regression model. You will implement parts of the code to:
-1. Generate datasets with shifted clusters.
-2. Fit a logistic regression model and extract parameters.
-3. Visualize the data, decision boundary, and logistic regression results.
-4. Analyze how these parameters change with increasing shift distances.
+1. **Ellipsoid Cluster Generation**:
+   - Generates two Gaussian clusters with configurable separation distance.
+   - Adds shifts along the x and y axes to study their effect on classification.
+
+2. **Logistic Regression**:
+   - Fits a logistic regression model to the generated dataset.
+   - Extracts model parameters such as intercept and coefficients.
+
+3. **Visualizations**:
+   - Visualizes clusters, decision boundaries, and margin widths.
+   - Plots parameter changes (coefficients, intercepts, logistic loss) across varying shift distances.
+
+4. **Web Application**:
+   - Flask-based UI to run experiments with user-defined parameters.
+   - Displays results and visualizations directly in the browser.
+
+---
+
 
 ## Part 0: Setup Environment
 
