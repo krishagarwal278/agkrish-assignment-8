@@ -1,7 +1,7 @@
 # Logistic Regression Cluster Shift Experiment
 
 ## Project Overview
-Demo vide link: https://youtu.be/5hL5tQGpuEk <br></br>
+Demo video link: https://youtu.be/5hL5tQGpuEk <br></br>
 This project implements an experiment to study the effects of shifting clusters on logistic regression parameters. The experiment generates two ellipsoid clusters with configurable shifts and fits a logistic regression model to observe how parameters such as coefficients, intercept, logistic loss, and decision boundaries change with increasing separation between the clusters.
 
 The project includes:
